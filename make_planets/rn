@@ -1,0 +1,2 @@
+rm -f restart_photo
+date;./create_planet;date

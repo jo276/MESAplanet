@@ -1,0 +1,33 @@
+# Basic setup of planetary computations with mesa, written by JO, June 2016
+
+# Pre-requites:
+mesa code v6208 and patched
+mesa sdk toolkit v245
+nugrid.mesa python module
+python namelist fortran module
+
+# download mesa from web:
+1 create directory where mesa is to be installed
+
+2 cd into said directory
+
+3 download mesa with : svn co -r 6208 svn://svn.code.sf.net/p/mesa/code/trunk mesa
+
+4 download mesasdk : wget --user-agent="" http://www.astro.wisc.edu/~townsend/resource/download/mesasdk/mesasdk-x86_64-linux-20141023.tar.gz
+
+5 setup environment variables to point to certain directories:
+MESA_DIR should point to mesa installation directory
+MESASDK_ROOT should point to sdk installation directory
+
+6 load sdk into path with: source $MESASDK_ROOT/bin/mesasdk_init.sh or use .csh for c-shell
+
+7 in directory planet_mesa/mesa_patch run patch.sh and it will patch mesa for planet calculations
+
+8 compile mesa - cd into mesa top level e.g. cd $MESA_DIR and then run ./install
+
+9 edit planets directory in pampas_run.py to point to correct location
+
+10 install mesa python module: pip install nugridpy
+
+11 run planet build and evolution calculations: python pampas_run.py 0 0 1 1 
+
