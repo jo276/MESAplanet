@@ -1,7 +1,7 @@
 This code is a modified verision of the mesa code to run planetary evolution calculations with photoevaporation.
 It is used in the paper by Owen (2020) arXiv: to constrain the entropy of young planets. 
 
-The notebook Young_planets_MESA_analysis contains the python analysis notebook
+The notebook Young_planets_MESA_analysis contains the python analysis notebook from that paper. 
 
 WARNING: To run the full young planets grid analysis from the paper requires several 10,000 CPU hours and
 will need to be run on a HPC cluster. 
