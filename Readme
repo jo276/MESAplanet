@@ -1,5 +1,5 @@
 This code is a modified verision of the mesa code to run planetary evolution calculations with photoevaporation.
-It is used in the paper by Owen (2020) arXiv: to constrain the entropy of young planets. 
+It is used in the paper by Owen (2020) arXiv:2009.03919 to constrain the entropy of young planets. 
 
 The notebook Young_planets_MESA_analysis contains the python analysis notebook from that paper. 
 
